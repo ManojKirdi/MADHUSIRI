@@ -1,29 +1,20 @@
-# M-S Android App
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-This repository is now a native Android app built with Kotlin and Jetpack Compose.
+# Run and deploy your AI Studio app
 
-## Open in Android Studio
+This contains everything you need to run your app locally.
 
-1. Open this folder in Android Studio.
-2. Let Android Studio sync the Gradle project.
-3. Select the `app` run configuration.
-4. Run it on an emulator or Android device.
+View your app in AI Studio: https://ai.studio/apps/24ef8333-9ac1-43b9-a9c6-45890a4746aa
 
-## Project Structure
+## Run Locally
 
-- `app/src/main/java/com/ms/app/MainActivity.kt` contains the Compose UI.
-- `app/src/main/AndroidManifest.xml` defines the launcher activity.
-- `app/build.gradle.kts` contains the Android app configuration and dependencies.
+**Prerequisites:**  Node.js
 
-## Requirements
 
-- Android Studio with JDK support
-- Android SDK 35 or newer installed through Android Studio
-
-## Build From Terminal
-
-If Gradle and the Android SDK are available on your PATH:
-
-```powershell
-gradle :app:assembleDebug
-```
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
